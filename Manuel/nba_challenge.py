@@ -1,4 +1,4 @@
-print("Challenge 2.1:")
+Xprint("Challenge 2.1:")
 jamal_murray_3pts_made = 46
 # TODO: Create variable here for number of 3 pt shots made by Fred VanVleet
 # TODO: Create variable here for number of 3 pt shots made by James Harden
