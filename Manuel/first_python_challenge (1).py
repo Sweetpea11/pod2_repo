@@ -13,7 +13,7 @@ print(box_4)
 
 # print('3.1: Declare a variable with the name "address", assign it any street name you like')
 
-address = 'Crenshaw'
+address = 'Vernon Ave '
 
 # print('3.2: Print the address variable')
 
@@ -21,8 +21,8 @@ print(address)
 
 # print('4: Reassign variables box_2 and box_4 with some other text and print box_1, box_2, box_3, box_4 again')
 
-box_2 = 'shoes'
-box_4 = 'bedroom stuff'
+box_2 = 'flag'
+box_4 = 'cat'
 print(box_1)
 print(box_2)
 print(box_3)
