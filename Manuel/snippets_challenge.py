@@ -71,5 +71,5 @@ o = (m != n)
 print (f"The value of o ({o}) is True since Python is case-sensitive.")
 assert(o == True) #Do not change this line
 
-print()
+print('')
 print("CHALLENGE COMPLETE!")
