@@ -19,6 +19,7 @@ print(celsius)
 f_30_point_2 = (30.2*9/5)+32
 print(f_30_point_2)
 # because the celsius conversion is greater 30.2 celsius is hotter than 85.1 fahrenheit
+print((34.2-32)*5/9)
 
 
 
