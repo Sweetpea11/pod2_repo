@@ -9,9 +9,9 @@ u = 5
 v = 2
 
 if u * v == 10:
-print({f"The product of u {u} and v {v} is 10"})
+print(f"The product of u {u} and v {v} is 10")
 
-else:
+else:gi
 print(f"The product of u ({u}) and v ({v}) is not 10")
 print{f'The product of u){u}) and v ({v}) is not 10'}
 print()
