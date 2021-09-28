@@ -123,3 +123,6 @@ print(f'This is a list of the possible prices for the 13" Macbook Pro {laptops[0
 print()
 print(f'This is a list of the possible prices for the 16" Macbook Pro {laptops[0]["types"][1]["price"]}')
 print()
+print(f'This is a list of the possible prices for the 13" Dell XPS {laptops[1]["types"][0]["price"]}')
+print()
+print(f'This is a list of the possible prices for the 15" Dell XPS {laptops[0]["types"][1]["price"]}')
