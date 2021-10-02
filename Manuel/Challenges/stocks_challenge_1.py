@@ -67,7 +67,7 @@ else ...
 
 print()
 
-print("Challenge 3.2.3: Output for the user the result")
+# print("Challenge 3.2.3: Output for the user the result")
 # TODO: Once you have calculated the number of stocks that can be purchased, print the result for the client. Result should be in a format like this:
 
 # Alex has $5000 in savings and he can buy 50 shares of Apple at the current price of $100.
