@@ -149,7 +149,7 @@ books_with_details = [
 # Describe the structure of the data in books_with_details. What types of data are nested within others? How do you know?
 
 # The data in books_with_details contains a list of dictionaries.
-# The types of data are strings.
+# The types of data are strings. Inside the lists are strings.
 
 # 2.1
 # Create a function 'count_books' that returns the number of books in the books_with_details list
