@@ -1,4 +1,4 @@
-print("Challenge 3.2: Playing with the stock market")
+# print("Challenge 3.2: Playing with the stock market")
 
 print()
 
@@ -10,18 +10,21 @@ fb = 250
 google = 1400
 msft = 200
 
-print("Challenge 3.2.1: Taking user input")
+# print("Challenge 3.2.1: Taking user input")
 # TODO: Write code to ask the client his name and save it to a variable.
 clientname = 'What is your name?'
+name='Alex'
 print(clientname)
+print(name)
 # TODO: Write code to ask the client his savings and save it to another variable.
-savings = 'What is your savings?'
+print('How much is your savings?')
+savings = '5000'
 print(savings)
 # TODO: Write code to ask the client the stock he is interested in and save it to another variable, as shown below.
 stock = input("Which stock are you interested in?  'amzn', 'aapl', 'fb', 'goog', 'msft' ")
 print()
 
-print("Challenge 3.2.2: Perform user-specific calculations")
+#print("Challenge 3.2.2: Perform user-specific calculations")
 # TODO: You have all 3 user inputs stores in variables. Based on that, write conditional (if-elif-else) statements to find out the number of stocks of the company that can be purchased with the savings amount.
 
 '''
@@ -33,9 +36,13 @@ elif ...
 else ...
 '''
 
-print()
+stock = 5000
+if stock > amazon:
+    print('amzn!')
+else:
+    print('Apple' )
 
-print("Challenge 3.2.3: Output for the user the result")
+#print("Challenge 3.2.3: Output for the user the result")
 # TODO: COnce you have calculated the number of stocks that can be purchased, print the result for the client. Result should be in a format like this:
 
 # Alex has $5000 in savings and he can buy 50 shares of Apple at the current price of $100.
