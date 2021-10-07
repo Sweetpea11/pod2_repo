@@ -55,7 +55,7 @@ d = (5 > 7) or not (8 < 20)
 # TO DO: Explain how d is set to False in a print statement
 assert(d == False) #Do not change this line
 
-print()
+print('the value of d is false because we added == between a false and true')
 
 
 print("Code Snippet 5:")
