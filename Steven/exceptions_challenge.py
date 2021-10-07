@@ -17,7 +17,7 @@ cheeses = ['cheddar', 'swiss', 'pepper jack', 'provolone']
 
 sandwiches = []
 
-for meat in meats
+for meat in meats:
     for cheese in cheeses:
         sandwiches.append(f'{meat} & {cheese}')
 
