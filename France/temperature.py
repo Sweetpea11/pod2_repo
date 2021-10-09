@@ -1,15 +1,15 @@
-TEMPERATURE.PY
+#TEMPERATURE.PY
 #CONVERT A TEMPERATURE OF 100 DEGRESS FAHRENHEIT TO CELSIUS
-celcsius_(100 - 32)*5/9
+celcsius_0(100 - 32)*5/9
 # convert a temperature of 0 degrees farenhiet to celsius
-
+``
 
 # convert _0 = (0-32)*5/9\
-print (celsius_0)
+print(celsius_0)
 
 # CONVERT A TEMPERATURE OF 34.2 DEGREES FAHRENHEIT TO CELSIUS 
 
-PRINT (34.2-32) *5/9
+print(34.2-32) *5/9
 
 # CONVERT A TEMPERATURE OF 5 DEGREES CELSIUS TO FARENHEIT?
 
