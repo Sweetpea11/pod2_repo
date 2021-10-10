@@ -25,7 +25,7 @@ display_playlist(my_playlist)
 
 #example_song = {'artist': 'Lauryn Hill', 'title': 'Everything Is Everything'}
 
-add_song(my_playlist,{'artist': '2pac', 'title': 'Hail Mary'})
+add_song(my_playlist,{'artist':'2pac', 'title': 'Hail Mary'})
 
 # 4 Check that you've added the song by running the display_playlist() function again
 print('Question 4')
@@ -33,7 +33,7 @@ display_playlist(my_playlist)
 # 5 Add 2 more songs to my_playlist, then display it again using the display_playlist() function
 print('Question 5')
 
-add_song(my_playlist,{'artist': 'Inoj', 'title': 'Time after Time'})
+add_song(my_playlist,{'artist': 'Future', 'title': 'Red Light'})
 add_song(my_playlist,{'artist': 'Drake', 'title': 'God"s Plan'})
 
 print(display_playlist(my_playlist))

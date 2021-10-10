@@ -6,12 +6,15 @@ all_laptops = ["Apple MacBook Pro", "Asus Zenbook", "Dell XPS", "Lenovo IdeaPad"
 
 
 # TODO: Write code to print all laptop names
-print(all_laptops[0])
-print(all_laptops[1])
-print(all_laptops[2])
-print(all_laptops[3])
-print(all_laptops[4])
-print(all_laptops[5])
+# print(all_laptops[0])
+# print(all_laptops[1])
+# print(all_laptops[2])
+# print(all_laptops[3])
+# print(all_laptops[4])
+# print(all_laptops[5])
+
+# update to write less code
+print(all_laptops[0:5])
 
 
 
