@@ -1,5 +1,6 @@
-# Authors: X-Coders Gang Gang
-# Date: 09/23/2021
+# Authors: Manuel Ramos & 
+# Date: 9/23/2021
+
 
 print("Challenge: Favourite Restaurants")
 
@@ -38,12 +39,11 @@ print(restaurant)
 # TODO: Write code to print the latitude and longitude of Four Barrel Coffee.
 print(f'Latitude of Four Barrel Coffee: {restaurant["latitude"]}\nLongitude of Four Barrel Coffee: {restaurant["longitude"]}')
 
+# TODO: Write code to print the complete address of the Four Barrel Coffee, formatted as a string - it should include the address, city, state and the zip code.
+print(f'The complete address of Four Barrel Coffee is {restaurant["address1"]}, {restaurant["city"]}, {restaurant["state"]} {restaurant["country"]} {restaurant["zip_code"]}')
 
-
-# # TODO: Write code to print the complete address of the Four Barrel Coffee, formatted as a string - it should include the address, city, state and the zip code.
 # TODO: Write code to print the URL of the website of Four Barrel Coffee.
-
-
+print(f'Website of Four Barrel Coffee: {restaurant["url"]}')
 print()
 
 print("Question 2")
@@ -64,7 +64,24 @@ restaurant_1  = {
     "favourite_dish" : "Chicken BLT Sandwich" }
 '''
 
-print()
+restaurant_1 = {
+    "name": "Grande Lux Cafe",
+    "address" : "600 N Michigan Ave Chicago IL 60016",
+    "favourite_dish":" Pot Roast Cheese Fries"}
+
+restaurant_2 = {
+    "name": "Taste Bar & Grill", 
+    "address" : "1675 Bagby st Houston Tx 91876",
+    "favourite_dish":"Jerk Lamb Chops"}
+
+restaurant_3 ={
+    "name" : "Cheesecake Factory",
+    "address":"2288 Old Orchard Rd Skokie IL 60077",
+    "favorite_dish":"Jamaican Black Pepper Shrimp" }
+
+print(restaurant_1)
+print(restaurant_2)
+print(restaurant_3)
 
 print("Question 3")
 '''
@@ -72,10 +89,13 @@ Imagine that any 1 of your most favourite restaurants stopped serving your favou
 Remove the 'favourite_dish' key value pair from that restaurant's dictionary
 '''
 
+
 # TODO: Remove the 'favourite_dish' key-value pair from one of your 3 restaurants
 # TODO: Print the new dictionary. The new dictionary should only contain 'name' and 'address' for that restaurant
 
-print()
+restaurant_2.pop("favourite_dish")
+
+print(restaurant_2)
 
 print("Question 4")
 '''
@@ -87,4 +107,7 @@ Update just this value in that restaurant's dictionary
 # TODO: Print the new address of the restaurant by accessing that field of the restaurant's dictionary
 # TODO: Print the updated dictionary.
 
-print()
+restaurant_1["address"]="8265 Holland St, TX 75224"
+print(restaurant_1)
+
+
