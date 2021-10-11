@@ -111,4 +111,3 @@ print(laptops[0]["types"][0]["price"])
 print(laptops[0]["types"][1]["price"])
 print(laptops[1]["types"][0]["price"])
 print(laptops[1]["types"][1]["price"])
-

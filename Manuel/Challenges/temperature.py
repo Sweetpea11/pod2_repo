@@ -15,4 +15,4 @@ print(celsius_0)
 print((5*9/5)+32)
 f_30_point_2 = (30.2*9/5)+32
 print(f_30_point_2)
-print(f(30.2 degrees celsius is equal to {f_30_point_2} degrees fahrenheit, its hotter than 85.1 degrees fahrenheit))
+print(f('30.2 degrees celsius is equal to {f_30_point_2} degrees fahrenheit, its hotter than 85.1 degrees fahrenheit'))
