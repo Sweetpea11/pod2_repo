@@ -10,9 +10,9 @@ print(f"In the 2020 NBA playoffs, Jamal_ Murray_made:jamal_murray 3point shots"
 
 # TODO: Create print statement here for James Harden
 
-print(f"In the 2020 NBA playoffs, Fred VanVleet made {fred_vanvleet_3pts_made} 3 point shots")
-print(f"In the 2020 NBA playoffs, James Harden made {james_harden_3pts_made} 3 point shots")
-print("Challenge 2.3: Store the number of three point shot attempts in variables for each player")
+#print(f"In the 2020 NBA playoffs, Fred VanVleet made {fred_vanvleet_3pts_made} 3 point shots"]
+#print(f"In the 2020 NBA playoffs, James Harden made {james_harden_3pts_made} 3 point shots")
+#print("Challenge 2.3: Store the number of three point shot attempts in variables for each player")
 # TODO: Create variable here for number of 3 pt shot attempts by Jamal Murray
 # TODO: Create variable here for number of 3 pt shot attempts by Fred VanVleet
 # TODO: Create variable here for number of 3 pt shot attempts by James Harden
