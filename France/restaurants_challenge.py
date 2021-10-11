@@ -33,11 +33,11 @@ restaurant = {
 print(restaurant)
 
 # TODO: Write code to print the latitude and longitude of Four Barrel Coffee.
+print(f'Latitude of Four Barrel Coffee: {restaurant["latitude"]}\nLongitude of Four Barrel Coffee: {restaurant["longitude"]}')
 # TODO: Write code to print the complete address of the Four Barrel Coffee, formatted as a string - it should include the address, city, state and the zip code.
+print(f'The complete address of Four Barrel Coffee is {restaurant["address1"]}, {restaurant["city"]}, {restaurant["state"]} {restaurant["country"]} {restaurant["zip_code"]}')
 # TODO: Write code to print the URL of the website of Four Barrel Coffee.
-
-
-print()
+print(f'website of four barrel coffee: {restaurant["url"]}')
 
 print("Question 2")
 
@@ -48,14 +48,30 @@ print("Question 2")
 
 # TODO: Print each dictionary
 
+
 # The dictionary for each restaurant should look something like this
 
-'''
+
 restaurant_1  = {
-    "name": "Subway",
-    "address" : "116th & Broadway, NY 10016",
-    "favourite_dish" : "Chicken BLT Sandwich" }
-'''
+    "name": "water club",
+    "address" : "500 E 30th St, New York, NY 10016",
+    "favourite_dish" : "Chicken platter" }
+
+restaurant_2 = {
+    "name": "ruth chris",
+    "address" : "148 W 51st St, Manhattan, NY 10019",
+    "favourite_dish" : "sweat potatoes" }
+
+restaurant_3  = {
+    "name": "sea",
+    "address" : "114 N 6th St, Brooklyn, NY 11249",
+    "favourite_dish" : "volcano" }
+    
+
+print(restaurant_1) 
+print(restaurant_2)
+print(restaurant_3)
+
 
 print()
 
@@ -67,8 +83,8 @@ Remove the 'favourite_dish' key value pair from that restaurant's dictionary
 
 # TODO: Remove the 'favourite_dish' key-value pair from one of your 3 restaurants
 # TODO: Print the new dictionary. The new dictionary should only contain 'name' and 'address' for that restaurant
-
-print()
+restaurant_3.pop("favourite_dish")
+print(restaurant_3)
 
 print("Question 4")
 '''
@@ -79,5 +95,5 @@ Update just this value in that restaurant's dictionary
 # TODO: Update the address field of 1 restaurant 
 # TODO: Print the new address of the restaurant by accessing that field of the restaurant's dictionary
 # TODO: Print the updated dictionary.
-
-print()
+restaurant_3["address"]=" 220 N 6th St. Brooklyn, NY 11211"
+print(restaurant_3)
