@@ -7,6 +7,7 @@ This class and the methods are already imported in this script -- test them here
 '''
 # import the Booklist class and corresponding methods
 from book_class import *
+
 '''
 PART #1. 
 Set up the initialization function for class Booklist()
