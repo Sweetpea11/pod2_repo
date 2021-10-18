@@ -19,8 +19,8 @@ Also, print out the type of my_library to see what you get :)
 '''
 print('PART 1\n')
 my_libary = Booklist()
-print(my_libary)
-class Booklist():
+print(my_libary.books)
+print(type(my_libary))
 
 
 '''
@@ -38,12 +38,12 @@ My Grandmother's Hands - Resmaa Menakem
 Finally, prinb the books attribute of my_library to make sure your books have been added!
 '''
 print('\nPart 2\n')
-my_library.add(title = 'Just Mercy' author = 'Bryan Stevenson')
-my_library.add(title = 'The New Jim Crow' ,author = 'Michelle Alexander')
-my_library.add(The Truths We Hold - Kamala Harris
-my_library.add(My Grandmother's Hands - Resmaa Menakem)
+my_library.add(title = 'Just Mercy', author = 'Bryan Stevenson')
+my_library.add(title = 'The New Jim Crow', author = 'Michelle Alexander')
+my_library.add(title = 'The Truths We Hold', author = 'Kamala Harris')
+my_library.add(title = 'My Grandmother"s Hands', author = 'Resmaa Menakem')
 
-print(my_libary)
+print(my_libary.books)
 '''
 Part #3: 
 Define the count_books() method to get the number of books in an object of class Booklist
@@ -51,7 +51,10 @@ Define the count_books() method to get the number of books in an object of class
 -the method should return an integer that is the length of the list stored in the books attribute
 Once you have finished the method, count the books in my_library and print out the result
 '''
+
 print('\nPart 3\n')
+num_books = mylibrary.count_books()
+
 '''
 Part #4: 
 Define the remove_title() method which will remove a book by its title from an objectof class Booklist
@@ -62,6 +65,9 @@ Once you have finished the method, remove 'Just Mercy' from my_library
 Then, print out the books attribute to make sure that book is gone
 '''
 print('\nPart 4\n')
+
+my_libary.remove_title('Just Mercy')
+print(my_libary.books)
 '''
 Part #5:
 Instantiate another object of class Booklist called nyt_bestsellers
@@ -70,6 +76,8 @@ You can find NYT books here: https://www.nytimes.com/books/best-sellers/
 Then, print out the books attribute of nyt_bestsellers
 '''
 print('\nPart 5\n')
+nyt_bestsellers.add('A time for mercy', 'John Grisham')
+nyt_bestsellers.add('The return', 'Nicholas Sparks')
 '''
 BONUS Part #6:
 Define a display_titles() method to display all the titles of the books in an object of class Booklist
@@ -78,4 +86,6 @@ The titles should be displayed in alphabetical order!
 HINT: there's a quick way to sort a list in alphabetical order
 Once you have completed this method, test it out on both my_library and nyt_bestsellers
 '''
-print('\nBONUS Part 6\n') 
+print('\nBONUS Part 6\n')
+my_library.display_titles()
+nyt_bestsellers.display_titles()

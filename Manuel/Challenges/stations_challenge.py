@@ -1,7 +1,6 @@
 '''
 NYC Transit Challenge! 
 
-
 In this challenge, you will use OOP and inheritance to design subway and bus stations!
 You'll use the parent class Station to make child classes for SubwayStation and BusStation. 
 
@@ -45,13 +44,13 @@ Then run the show_info() method to make sure you get the station_name, location,
 '''
 #station_name: '14th street'
 #location: '14th street and 7th avenue'
-# lines: ['Red', 'Blue', 'Green', 'Orange']
+lines = ['Red', 'Blue', 'Green', 'Orange']
 # print()
-# station_name: 'Cityplace Station'
+#station_name = 'Cityplace Station'
 # location: 'I 75 and Lemmon Avenue'
 # #lines: ['1', '2', '3', 'L']
 
-cityplace_station = SubwayStation(station_name = 'Cityplace Station ', location =  'I 75 and Lemmon Avenue', lines =[ 'Red', 'Blue','Green', 'Orange'])
+cityplace_station = SubwayStation(station_name = 'Cityplace Station ', location =  'I 75 and Lemmon Avenue', lines = ['Red', 'Blue','Green', 'Orange'])
 cityplace_station.show_info()
 print('Question 3: Making the BusStation Class')
 
@@ -68,25 +67,27 @@ BusStation should:
 class BusStation(Station):
      def __init__(self, station_name, location, routes,):
         super().__init__(station_name, location)
-        self.routes = []
+        self.routes = routes
+        self.open = True
+     
+     def show_info(self):
+        print(f'{self.station_name} station is located at {self.location}. and you can take the bus to these other stations ')
+        print(self.routes)
+        if self.open:
+            print(f'This {self.station_name} is open.')
+        else:
+            print(f'The {self.station_name} is closed.')
     
      def open_station(self):
-         self.open = Open
+         self.open = True
+         print(f'{self.station_name} is open.')  
 
-     def closed_station(self):
+     def close_station(self):
          self.closed = Closed
+         print(f'{self.station_name} is closed.')  
          
-     def show_info(self):
-         print(f'This is {self.station_name} serving {self.routes} and at this time the station is ')
 
             
-routes = ['Eagle Pass', 'Laredo', 'Monclova']
-
-eagle_pass_station = BusStation(station_name = 'Eagle Pass Station', location = 'Veterans Blvd', routes = routes , open = True)
-laredo_station = BusStation(station_name, location, routes)
-monclova_station = BusStation(station_name = 'Monclova Station', location = 'Zona Centro 25700 ', routes = routes, )
-eagle_pass_station.show_info()
-
 print('Question 4: Make an example bus station')
 '''
 Using your BusStation class, instantiate a bus station with the info below. 
@@ -98,6 +99,11 @@ station_name: 'NYC Megabus Stop'
 location: '34th street and 12th avenue'
 lines: ['Boston', 'DC', 'Philly']
 '''
+eagle_pass_station = BusStation(station_name = 'Eagle Pass Station', location = 'Veterans Blvd', routes = routes ,)
+eagle_pass_station.show_info()
+eagle_pass_station.close_station()
+eagle_pass_station.open_station()()
+eagle_pass_station.show_info()
 
 print('Question 5: Importing your classes')
 
@@ -109,4 +115,6 @@ Make a new python script called "station_planning.py"
     -Instantiate 3 more stations of your choosing (at least 1 bus and 1 subway)
     -Feel free to make up names, locations, lines, and routes!
 '''
-
+laredo_station = BusStation(station_name, location, routes)
+monclova_station = BusStation(station_name = 'Monclova Station', location = 'Zona Centro 25700 ', routes = routes,)
+tyler_vernon_station = BusStation(station_name = 'Tyler/Vernon Station', location = '1225 S Tyler St, Dallas, TX 75208', routes = routes,)
