@@ -1,0 +1,27 @@
+.center {
+    text-align: center;
+}
+.font_verdana {
+    font-family: Verdana;
+}
+.blue {
+    color: blue;
+}
+#fact1 {
+    color: yellow;
+    font-style: italic;
+}
+#fact2 {
+    color: orange;
+}
+#fact3 {
+    color: red;
+}
+form {
+    font-weight: bold;
+}
+.center_img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
