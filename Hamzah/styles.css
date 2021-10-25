@@ -1,0 +1,27 @@
+h1 {
+    text-align: center;
+}
+.font_verdana {
+    font-family: Verdana;
+}
+p {
+    color: darkcyan;
+}
+#Fact1 {
+    color: darkblue;
+}
+#Fact2 {
+    color: darkred;
+    font-style: italic;
+}
+#Fact3 {
+    color: darkgreen;
+}
+form {
+    font-weight: bold;   
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
