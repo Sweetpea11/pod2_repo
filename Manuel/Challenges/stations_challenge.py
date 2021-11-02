@@ -99,10 +99,10 @@ station_name: 'NYC Megabus Stop'
 location: '34th street and 12th avenue'
 lines: ['Boston', 'DC', 'Philly']
 '''
-eagle_pass_station = BusStation(station_name = 'Eagle Pass Station', location = 'Veterans Blvd', routes = routes ,)
+eagle_pass_station = BusStation(station_name = 'Eagle Pass Station', location = 'Veterans Blvd', lines = ['Dallas' 'Corpus Cristi','Lorado'])
 eagle_pass_station.show_info()
 eagle_pass_station.close_station()
-eagle_pass_station.open_station()()
+eagle_pass_station.open_station()
 eagle_pass_station.show_info()
 
 print('Question 5: Importing your classes')
@@ -115,6 +115,3 @@ Make a new python script called "station_planning.py"
     -Instantiate 3 more stations of your choosing (at least 1 bus and 1 subway)
     -Feel free to make up names, locations, lines, and routes!
 '''
-laredo_station = BusStation(station_name, location, routes)
-monclova_station = BusStation(station_name = 'Monclova Station', location = 'Zona Centro 25700 ', routes = routes,)
-tyler_vernon_station = BusStation(station_name = 'Tyler/Vernon Station', location = '1225 S Tyler St, Dallas, TX 75208', routes = routes,)
