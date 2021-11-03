@@ -4,16 +4,16 @@ movies_str = "House on Haunted Hill,Cruel Intentions,10 Things I Hate About You,
 # this variable is assigned a list of strings
 top_50_list = ['Star Wars: Episode I - The Phantom Menace', 'The Sixth Sense', 'Austin Powers: The Spy Who Shagged Me', 'Toy Story 2', 'The Matrix', 'Tarzan', 'Big Daddy', 'The Mummy', 'Runaway Bride', 'The Blair Witch Project', 'Notting Hill', 'The World Is Not Enough', 'Double Jeopardy', 'Wild Wild West', 'Analyze This', "The General's Daughter", 'American Pie', 'Inspector Gadget', 'Shakespeare in Love', 'Sleepy Hollow', 'The Haunting', 'Patch Adams', 'Entrapment', 'Pokémon: The First Movie - Mewtwo Strikes Back', 'Payback', 'Deep Blue Sea', 'American Beauty', 'The Thomas Crown Affair', 'Stuart Little', 'Blue Streak', 'The Green Mile', 'Bowfinger', 'Life', 'The Bone Collector', "She's All That", 'End of Days', 'Three Kings', 'A Civil Action', 'Stepmom', 'Eyes Wide Shut', 'Never Been Kissed', 'Forces of Nature', 'Varsity Blues', 'Message in a Bottle', "You've Got Mail", 'South Park: Bigger, Longer & Uncut', 'Stigmata', 'Life Is Beautiful', 'The Prince of Egypt',
 'Deuce Bigalow: Male Gigolo']
-remaining_50_list=[movies_str.split(',')]
 
 # TODO: Take the string "movies_str" and convert it into a list and assign it to a variable called "remaining_50_list"
 # Note: Print your new variable to see the list of movies
+remaining_50_list = movies_str.split(',')
 print(remaining_50_list)
 
 # TODO: Hmm. Looks like "remaining_50_list" contains the movie "The Matrix" which is also in the "top_50_list". Let's remove this duplicate title from "remaining_50_list".
 # Note: Make sure to double check the list you are removing from
 
-remaining_50_list.remove(The Matrix)
+remaining_50_list.remove('The Matrix')
 print(remaining_50_list)
 
 
@@ -35,7 +35,7 @@ print(top_100)
 print(top_100[0])
 
 # TODO: Let's print the top 10 movies in "top_100" as a list. Let's use the slice syntax to accomplish this!
-print(top_100[0:10])
+print(top_100[0:9])
 
 # TODO: Let's convert the list "top_100" back into a string. Assign it to a variable called "top_100_str".
 # Note: Print your new variable to see the string version of the movies

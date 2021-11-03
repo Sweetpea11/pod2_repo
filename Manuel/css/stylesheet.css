@@ -1,0 +1,25 @@
+
+h1{
+    color: blue;
+    text-align: center;
+
+
+}
+P{
+    color:blue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    
+
+
+}
+.blue{
+    color:blue ;
+}
+.center{
+    text-align: center;
+}
+#title{
+    font-size: 48px;
+}
+
