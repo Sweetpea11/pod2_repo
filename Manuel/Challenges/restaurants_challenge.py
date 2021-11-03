@@ -44,8 +44,6 @@ print(f'The complete address of Four Barrel Coffee is {restaurant["address1"]}, 
 
 # TODO: Write code to print the URL of the website of Four Barrel Coffee.
 print(f'Website of Four Barrel Coffee: {restaurant["url"]}')
-
-
 print()
 
 print("Question 2")
@@ -91,7 +89,6 @@ Imagine that any 1 of your most favourite restaurants stopped serving your favou
 Remove the 'favourite_dish' key value pair from that restaurant's dictionary
 '''
 
-
 # TODO: Remove the 'favourite_dish' key-value pair from one of your 3 restaurants
 # TODO: Print the new dictionary. The new dictionary should only contain 'name' and 'address' for that restaurant
 
@@ -108,8 +105,5 @@ Update just this value in that restaurant's dictionary
 # TODO: Update the address field of 1 restaurant 
 # TODO: Print the new address of the restaurant by accessing that field of the restaurant's dictionary
 # TODO: Print the updated dictionary.
-
 restaurant_1["address"]="123 Jefferson Dallas, TX 75224"
 print(restaurant_1)
-
-
