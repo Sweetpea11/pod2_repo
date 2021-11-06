@@ -3,6 +3,8 @@ from .models import Todo
 from django.http import HttpResponseRedirect
 from django.urls import reverse
 from .forms import TodoForm
+from .models import Note
+from .forms import NoteForm
 
 # Create your views here.
 def todo(request):
@@ -45,3 +47,19 @@ def task(request, task_id):
         elif 'delete' in request.POST:
             Todo.objects.filter(pk=task_id).delete()
         return HttpResponseRedirect(reverse('todo'))
+
+def note(request):
+    if request.method == 'GET':
+        # notes is our QuerySet of Todo objects
+        notes = Note.objects.all().order_by('note_id')
+        # one instance of the NoteForm class
+        form = NoteForm()
+        return render(request = request, template_name = 'note.html', context = {'notes' : notes, 'form' : form})
+        
+    if request.method == 'POST':
+        form = NoteForm(request.POST)
+        if form.is_valid():
+            note = form.cleaned_data['note']
+            # add new Note object to Queryset
+            Note.objects.create(note_text=note)
+        return HttpResponseRedirect(reverse('note'))

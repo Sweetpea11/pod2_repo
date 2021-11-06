@@ -1,0 +1,18 @@
+<h1>Notes to Self</h1>
+
+<form action="{% url 'note' %}" method="POST">
+    {% csrf_token %} {{ form }}
+    <input type='submit' name='create' value = 'Create'/>
+</form>
+
+<ol>
+    {% for note in notes %}
+        <li>
+            {{note.note_text}}
+        </li>
+    {% endfor %}
+</ol>
+
+<form action="{% url 'todo' %}">
+    <input type="submit" value="Go to the To-Do List" />
+</form>

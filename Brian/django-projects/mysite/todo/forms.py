@@ -2,4 +2,7 @@ from django import forms
 
 class TodoForm(forms.Form):
     task = forms.CharField(label='Add a task', max_length =255)
-    
+
+class NoteForm(forms.Form):
+    note = forms.CharField(label='Add a note', max_length=255)
+     
