@@ -28,36 +28,37 @@ class Station:
         print(f'{self.station_name} station is located at {self.location}')
 
 class SubwayStation(Station):
-    class SubwayStation(Station):
-        def __init__(self, station_name, location, lines):
-        SubwayStation super .__init__(station_name, location)
+     def __init__(self, station_name, location, lines):
+        super().__init__(station_name, location)
         self.lines = lines
+    def show_info(self):
+        print(f'{self.station_name} station is located at {self.location} and these trains{self.lines} stop here')
 
-    
-    
-    
-    
-    
-  # (f'{self.station_') print 
+
+      
+
 print('Question 2: Make an example subway station')
 '''
 Using your SubwayStation class, instantiate a subway station with the info below. 
 Then run the show_info() method to make sure you get the station_name, location, and lines printed out
+'''
 
-station_name: '14th street'
-location: '14th street and 7th avenue'
-lines: ['1', '2', '3', 'L']
-station_name: "franklin ave"
-print(subway station.show_info)
-class subwaystation(Station) 
-  def _init_(self, station_name,location,):
-    super(). __init__(station_name, location,)
-    self.lines = lines
+# station_name: '14th street'
+# location: '14th street and 7th avenue'
+# lines: ['1', '2', '3', 'L']
+# station_name: "franklin ave"
+utica_station = SubwayStation(station_name = 'utica_station', location = " utica and fulton st", lines = ['A', 'C')
+
+print(Subwaystation.show_info)
+# class subwaystation(Station) 
+#   def _init_(self, station_name,location,):
+#     super(). __init__(station_name, location,)
+#     self.lines = lines
 #station_name = "utica ave"
 #location: " utica and fulton st"
- utica_station = subwaystation(station_name = 'utica_station')
- utica_station.lines = [A, C]
- utica_station.show_info()
+# #  utica_station = subwaystation(station_name = 'utica_station',location: " utica and fulton st", lines = [A, C])
+#  utica_station.lines = [A, C]
+#  utica_station.show_info()
 
 
 
@@ -65,15 +66,14 @@ class subwaystation(Station)
 
 print('Question 3: Making the BusStation Class')
 
-'''
-Using the Station class below as the parent, make a child class called BusStation
+# Using the Station class below as the parent, make a child class called BusStation
 
-BusStation should:
--have an additional attribute called 'routes' that is user-defined as a list during initialization. 
-    this will indicate where buses can go from this station. For example, ['DC', 'Philly', 'Pittsburgh']
--have an additional attribute called 'open' that is always initalized as True (a boolean variable)
--have additional methods called open_station() and close_station() to open and close the station
--override the show_info() method from Station to display the bus routes and if the station is open, in addition to the station name and location
+# BusStation should:
+# -have an additional attribute called 'routes' that is user-defined as a list during initialization. 
+#     this will indicate where buses can go from this station. For example, ['DC', 'Philly', 'Pittsburgh']
+# -have an additional attribute called 'open' that is always initalized as True (a boolean variable)
+# -have additional methods called open_station() and close_station() to open and close the station
+# -override the show_info() method from Station to display the bus routes and if the station is open, in addition to the station name and location
 
 
 class Busstation(Station) 
@@ -85,7 +85,7 @@ class Busstation(Station)
 
 # 42_street_station = Busstation(station_name = '42_street_station', location = 42 street and 8th ave routes to I95)
 print('Question 4: Make an example bus station')
-'''
+'''''
 Using your BusStation class, instantiate a bus station with the info below. 
 Then, run the show_info() method to make sure you get the station_name, location, routes, and whether the station is open printed out
 Then, demonstrate that you can close and open the bus station
