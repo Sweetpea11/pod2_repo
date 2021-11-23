@@ -1,0 +1,12 @@
+<h1>Every possible menu combination!</h1>
+
+
+<ol>
+    {% for sandwich in sandwich %}
+    <li>{{ sandwich }}</li>
+    {% endfor %}
+</ol>
+
+<form action="{% url 'sandwich' %}">
+    <input type="submit" value="Go back to home" />
+</form>

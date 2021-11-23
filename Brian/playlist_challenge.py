@@ -6,7 +6,7 @@
 # 1 Import all the functions in playlist_functions.py
 
 from playlist_functions import *
-import numpy as py
+import numpy as np
 
 # This code initializes your playlist as an empty list. no songs in it yet!
 my_playlist = []
@@ -62,7 +62,7 @@ print()
 print('Question 8')
 monthly_plays = [127030, 274920, 232453, 98278, 500301, 235462]
 
-print(py.mean(monthly_plays))
+print(np.mean(monthly_plays))
 print()
 
 # BONUS In playlist_functions.py, define a new function called play_track()
